@@ -1,4 +1,4 @@
-package jpabook.domain;
+package jpabook.jpashop.domain;
 
 
 import lombok.Getter;
@@ -6,7 +6,6 @@ import lombok.Setter;
 
 import javax.persistence.*;
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
 
 @Entity
@@ -26,4 +25,6 @@ public class Member {
 
     @OneToMany(mappedBy = "member")
     private List<Order> orders = new ArrayList<>();
+
+
 }
